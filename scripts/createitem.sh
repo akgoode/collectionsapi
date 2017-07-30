@@ -8,8 +8,8 @@ curl "${API}${URL_PATH}" \
   --header "Content-Type: application/json" \
   --data '{
     "item": {
-      "name": "chair",
-      "description": "comfy old chair"
+      "name": "sofa",
+      "description": "comfy old sofa"
     }
   }'
 

@@ -1,9 +1,14 @@
 class ItemsController < ApplicationController
+  before_action :set_item, only: [:show]
 
   def index
     @items = Item.all
 
     render json: @items
+  end
+
+  def show
+    render json: Item.find(params[:id])
   end
 
   def create
@@ -12,6 +17,11 @@ class ItemsController < ApplicationController
   end
 
   private
+
+  def set_item
+    @item = Item.find(params[:id])
+  end
+
   def item_params
     params.require(:item).permit(:name, :description)
   end
