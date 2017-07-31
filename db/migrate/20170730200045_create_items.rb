@@ -5,6 +5,7 @@ class CreateItems < ActiveRecord::Migration[5.0]
       t.text :description
       t.text :category
       t.text :creator
+      t.text :img
 
       t.timestamps
     end
