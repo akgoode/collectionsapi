@@ -12,6 +12,16 @@ gem 'listen'
 
 gem 'rack-cors'
 
+gem 'figaro'
+gem 'puma'
+group :development do
+  gem 'capistrano'
+  gem 'capistrano3-puma'
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano-rvm'
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
