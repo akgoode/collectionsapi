@@ -1,8 +1,9 @@
 lock '3.10.0'
 
-set :application, 'contactbook'
+set :application, 'items'
+set :repo_url, 'git@github.com:akgoode/collectionsapi.git' # Edit this to match your repository
 set :branch, :master
-set :deploy_to, '/home/deploy/contactbook'
+set :deploy_to, '/home/deploy/items'
 set :pty, true
 set :linked_files, %w{config/database.yml config/application.yml}
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads}
